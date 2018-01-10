@@ -60,8 +60,8 @@ for nSig = [10 20 30]
                 break;
             end
             [rec,ind] = adpmedft(Par.nim,19);
-            %             ind=(rec~=par.nim)&((par.nim==255)|(par.nim==0));
-            %             rec(~ind)=par.nim(~ind);
+            ind=(rec~=Par.nim)&((Par.nim==255)|(Par.nim==0));
+            rec(~ind)=Par.nim(~ind);
             
             %ind=false(size(lena)); % for full variation.
             
